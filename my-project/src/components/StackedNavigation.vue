@@ -4,10 +4,10 @@
       <div class="row">
         <div class="col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active">
+            <li>
               <a href="#">项目策划阶段 <span class="sr-only">(current)</span></a>
               <ul class="nav nav-child">
-                <li>软件研制任务书框架讨论</li>
+                <li><a>软件研制任务书框架讨论</a></li>
                 <li>编写软件研制任务书</li>
                 <li>项目策划阶段技术评审</li>
                 <li>功能基线建立并发布</li>
@@ -15,7 +15,7 @@
             </li>
             <li>
               <a href="#">软件计划阶段</a>
-              <ul class="nav nav-child hide">
+              <ul class="nav nav-child">
                 <li>软件研制任务书框架讨论</li>
                 <li>编写软件研制任务书</li>
                 <li>项目策划阶段技术评审</li>
@@ -40,20 +40,27 @@
 
 <script>
 import $ from 'jquery'
+
 export default {
   name: 'StackedNavigation',
   data(){
-    return{
-    
-    }
+    return{}
   },
   methods:{
     showTabs:function(){
-       
     }
   },
-  
 }
+  $(function(){
+    var $nav_li = $(".nav.nav-sidebar>li");
+    $nav_li.click(function(){
+      $(this).addClass("active")
+              .siblings().removeClass("active");
+      $(this).children('ul').show()
+              .parent().siblings().children('ul').hide();
+
+    });
+  });
 </script>
 
 <style scoped>
@@ -89,6 +96,7 @@ export default {
   font-size: 15px;
   margin:5px 50px;
   color:#7f8c8d;
+  display:none;
 }
 .nav-child li{
   margin:10px;
