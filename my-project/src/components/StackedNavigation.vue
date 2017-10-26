@@ -7,29 +7,100 @@
             <li>
               <a href="#">项目策划阶段 <span class="sr-only">(current)</span></a>
               <ul class="nav nav-child">
-                <li><a>软件研制任务书框架讨论</a></li>
-                <li>编写软件研制任务书</li>
-                <li>项目策划阶段技术评审</li>
-                <li>功能基线建立并发布</li>
+                <li><a href="#">软件研制任务书框架讨论</a></li>
+                <li><a href="#">编写软件研制任务书</a></li>
+                <li><a href="#">项目策划阶段技术评审</a></li>
+                <li><a href="#">功能基线建立并发布</a></li>
               </ul>
             </li>
             <li>
               <a href="#">软件计划阶段</a>
               <ul class="nav nav-child">
-                <li>软件研制任务书框架讨论</li>
-                <li>编写软件研制任务书</li>
-                <li>项目策划阶段技术评审</li>
-                <li>基线建立并发布</li>
+                <li><a href="#">编写计划过程</a></li>
+                <li><a href="#">核查计划过程</a></li>
+                <li><a href="#">评审计划过程</a></li>
+                <li><a href="#">计划过程配置管理</a></li>
+                <li><a href="#">计划过程质量保证</a></li>
+                <li><a href="#">基线建立并发布</a></li>
               </ul>
             </li>
             <li>
               <a href="#">软件需求阶段</a>
+              <ul class="nav nav-child">
+                <li><a href="#">构建高层需求</a></li>
+                <li><a href="#">核查高层需求</a></li>
+                <li><a href="#">评审高层需求</a></li>
+                <li><a href="#">高层需求配置管理</a></li>
+                <li><a href="#">高层需求质量保证</a></li>
+                <li><a href="#">基线建立并发布</a></li>
+              </ul>
             </li>
-            <li><a href="#">软件设计阶段</a></li>
-            <li><a href="#">软件编码阶段</a></li>
-            <li><a href="#">集成与测试阶段</a></li>
-            <li><a href="#">高层需求测试用例设计阶段</a></li>
-            <li><a href="#">低层需求测试用例设计阶段</a></li>
+            <li>
+              <a href="#">软件设计阶段</a>
+              <ul class="nav nav-child">
+                <li><a href="#">构建低层需求和架构设计</a></li>
+                <li><a href="#">核查软件设计</a></li>
+                <li><a href="#">评审软件设计</a></li>
+                <li><a href="#">低层需求配置管理</a></li>
+                <li><a href="#">低层需求质量保证</a></li>
+                <li><a href="#">基线建立并发布</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">软件编码阶段</a>
+              <ul class="nav nav-child">
+                <li><a href="#">软件编码</a></li>
+                <li><a href="#">核查软件编码</a></li>
+                <li><a href="#">评审软件编码</a></li>
+                <li><a href="#">软件编码配置管理</a></li>
+                <li><a href="#">软件编码质量保证</a></li>
+                <li><a href="#">基线建立并发布</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">集成过程</a>
+              <ul class="nav nav-child">
+                <li><a href="#">集成</a></li>
+                <li><a href="#">核查集成</a></li>
+                <li><a href="#">评审集成</a></li>
+                <li><a href="#">集成配置管理</a></li>
+                <li><a href="#">集成质量保证</a></li>
+                <li><a href="#">基线建立并发布</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">高层需求测试用例设计阶段</a>
+              <ul class="nav nav-child">
+                <li><a href="#">测试用例设计</a></li>
+                <li><a href="#">核查测试用例设计</a></li>
+                <li><a href="#">评审测试用例设计</a></li>
+                <li><a href="#">测试用例设计配置管理</a></li>
+                <li><a href="#">测试用例设计质量保证</a></li>
+                <li><a href="#">基线建立并发布</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">低层需求测试用例设计阶段</a>
+              <ul class="nav nav-child">
+                <li><a href="#">测试用例设计</a></li>
+                <li><a href="#">核查测试用例设计</a></li>
+                <li><a href="#">评审测试用例设计</a></li>
+                <li><a href="#">测试用例设计配置管理</a></li>
+                <li><a href="#">测试用例设计质量保证</a></li>
+                <li><a href="#">基线建立并发布</a></li>
+              </ul> 
+            </li>
+            <li>
+              <a href="#">集成测试</a>
+              <ul class="nav nav-child">
+                <li><a href="#">集成测试设计</a></li>
+                <li><a href="#">核查集成测试设计</a></li>
+                <li><a href="#">评审集成测试设计</a></li>
+                <li><a href="#">集成测试配置管理</a></li>
+                <li><a href="#">集成测试质量保证</a></li>
+                <li><a href="#">基线建立并发布</a></li>
+              </ul>
+            </li>
             <li><a href="#">软件总结阶段</a></li>
           </ul>
         </div>
@@ -100,5 +171,11 @@ export default {
 }
 .nav-child li{
   margin:10px;
+}
+.nav-child li a{
+  margin:2px 0;
+  padding: 2px;
+  color:#7f8c8d;
+  font-size:14px;
 }
 </style>
