@@ -2,7 +2,7 @@
   <div id="stacked-navigation">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-2 sidebar">
+        <div class="col-md-2 sidebar glass-panel">
           <ul class="nav nav-sidebar">
             <li>
               <a href="#">项目策划阶段 <span class="sr-only">(current)</span></a>
@@ -136,7 +136,7 @@ export default {
 
 <style scoped>
 .sidebar{
-  position: fixed;
+  position: absolute;
   top:52px;
   bottom:0;
   left: 0;
@@ -145,8 +145,9 @@ export default {
   padding:20px;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
   border-right: 1px solid #ddd;
+  float: left;
 }
 .nav-sidebar {
   margin-right: -21px; /* 20px padding + 1px border */
@@ -175,7 +176,16 @@ export default {
 .nav-child li a{
   margin:2px 0;
   padding: 2px;
-  color:#7f8c8d;
-  font-size:14px;
+  /* color:#7f8c8d; */
+  color:#000;
+  font-size:12px;
+}
+.glass-panel{
+  background-image: url('../assets/img/box-bk2.png');
+  background-position: no-repeat;
+  margin:10px 20px;
+  padding:30px;
+  border-radius:5px;
+  position:absolute;
 }
 </style>
